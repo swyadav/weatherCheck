@@ -1,0 +1,15 @@
+#This file shows how to run the program.
+1. The HOT.properties and COLD.properties file contains the list of commands and their values
+2. WeatherCheck is the main class that takes in the input as command line arguments and parses and produces output.
+3. The temperature provided should have a similar properties file.
+4. Person class contains all the necessary attributes.
+5. Validations class performs all the validations based on the input command and person's current state.
+6. Commands class loads the properties file and stores the input commands and their value.It is a singleton class.
+
+
+#Approached used.
+I have tried to make the program as simple as possible. I wanted to make the program more generic if anyone wanted to
+extend to other temperatures ex. RAINY etc. To do this I have used properties file which contains the input commands and
+their valid values. The properties file is loaded only once based on the temperature provided and stored in a singleton
+object. The validations class is final class which performs all the validations based on the current state of the person.
+The Person class contains all the properties of the person.
