@@ -37,7 +37,7 @@ public class weatherCheck {
         }
         for(int i = 1; i <= args.length-1; i++){
            // get the input command and validate it and assign it to the person
-           currentPerson = dressUp(args[i],currentPerson,commands);
+           currentPerson = dressUp(args[i].replace(",",""),currentPerson,commands);
         }
     }
 
